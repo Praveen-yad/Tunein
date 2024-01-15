@@ -129,9 +129,9 @@ const Homepage = ()=>{
 }
 
 return (
-    <div className="relative">
-        <div className="h-[100vh] flex bg-neutral-100 font-poppins w-full bg-gradient-to-tl to-white">
-            <div className="h-full w-[260px] bg-neutral-50 p-4">
+    <div className="relative bg-neutral-100 overflow-hidden">
+        <div className="flex  font-poppins w-full">
+            <div className="h-[100vh] w-[260px] bg-neutral-50 p-4">
                 <div className="flex border rounded-xl border-neutral-400 px-3 py-1 items-center w-full ">
                 <input className="w-full bg-transparent outline-none placeholder:text-xs placeholder:text-neutral-400" type="text" placeholder="Search..."></input>
                 <div className="text-neutral-400"><FiSearch/></div>
@@ -186,9 +186,9 @@ return (
             <div className="w-full h-full flex p-8">
                 <div>
                     <div className="flex justify-between w-full">
-                        <div className="w-[62%] h-[11rem] overflow-hidden rounded-2xl">
-                            <img alt="Error" src="https://res.cloudinary.com/de2rges3m/image/upload/v1704380327/Magazine/Screenshot_2024-01-04_202557_1_wbq5zo.png" className="object-cover w-[52rem] h-[10rem] scale-[1.1] mt-2"/>
-                        </div>
+                        <div className="w-[60%] h-[11rem] overflow-hidden rounded-2xl">
+                            <img alt="Error" src="https://res.cloudinary.com/de2rges3m/image/upload/v1704380327/Magazine/Screenshot_2024-01-04_202557_1_wbq5zo.png" className="object-cover w-[52rem] h-[10rem] scale-[1.2] ml-2 mt-2"/>
+                        </div> 
 
                         <div className="w-[28rem] shadow-md bg-white rounded-2xl pr-3 pt-3 h-[11rem] select-none">
                         <div className="text-sm font-medium ml-3">Popular Artist</div>
@@ -272,11 +272,11 @@ return (
                                     ))}
                                 </div>
                             </div>
-                            <div className="px-4 pt-3 pb-2 w-full h-[14rem] bg-white shadow-[0px_2px_5px_-2px] shadow-neutral-400 rounded-3xl">
+                            <div className="px-4 pt-3 pb-2 w-full h-[14rem] bg-white shadow-[0px_2px_5px_-2px] shadow-neutral-400 rounded-3xl overflow-y-auto">
                                 <div className="text-sm font-medium">Genre</div>
-                                <div className="flex flex-wrap gap-4 mt-2">
+                                <div className="flex flex-wrap gap-4 mt-2 ">
                                     {genre.map((item) => (
-                                        <div key={item.id} className="relative h-[4.9rem] w-[8.4rem] bg-neutral-200 flex rounded-md overflow-hidden items-center group cursor-pointer" onClick={() => SearchHandler(item.name)}>
+                                        <div key={item.id} className="relative h-[4.9rem] w-[8.25rem]  bg-neutral-200 flex rounded-md overflow-hidden items-center group cursor-pointer" onClick={() => SearchHandler(item.name)}>
                                             <div className="h-full w-2 absolute group-hover:w-[100%] transition-all duration-500 ease-in-out " style={{background:`#${item.hex}`}}></div>
                                             <div className="w-full flex flex-col items-center z-10">
                                                 <div>{item.icon}</div>

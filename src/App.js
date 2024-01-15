@@ -9,7 +9,6 @@ const App=()=>{
           <Route path="/" element={<Landing/>} />
           <Route path="/home" element={<Homepage/>} />
         </Routes>
-
     </BrowserRouter>
   )
 
