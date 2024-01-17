@@ -97,19 +97,48 @@ const Emotion = ({setEmotionPage ,SearchHandler}) => {
                                 </div>
                             </div>
                             :
-                            <div className='flex-1 flex flex-col justify-center items-center py-5 px-3 space-y-8'>
-                                <div className='text-[2rem] font-semibold capitalize flex space-x-2'>
-                                    <div>Emotion Recognized:</div><div className='font-medium'>{emotion.value}</div>
+                            <div className='flex-1 flex flex-col justify-center items-center py-5 px-3 space-y-10'>
+                                <div className='text-[2.2rem] capitalize flex space-x-2 flex-col items-center'>
+                                    <div className='font-[2.5rem]'>Emotion Recognized</div>
+                                    <div className='font-semibold'>*{emotion.value}*</div>
                                 </div>
 
-                                <div className='text-lg space-y-3'>
-                                    <div className='capitalize'>angry😡:{" "}{Math.floor(emotion.sentiments.angry*1000)/10}%</div>
-                                    <div className='capitalize'>disgust🤢:{" "}{Math.floor(emotion.sentiments.disgust*1000)/10}%</div>
-                                    <div className='capitalize'>fear😨:{" "}{Math.floor(emotion.sentiments.fear*1000)/10}%</div>
-                                    <div className='capitalize'>happy😁:{" "}{Math.floor(emotion.sentiments.happy*1000)/10}%</div>
-                                    <div className='capitalize'>neutral😐:{" "}{Math.floor(emotion.sentiments.neutral*1000)/10}%</div>
-                                    <div className='capitalize'>sad😟:{" "}{Math.floor(emotion.sentiments.sad*1000)/10}%</div>
-                                    <div className='capitalize'>surprise😯:{" "}{Math.floor(emotion.sentiments.surprise*1000)/10}%</div>
+                                <div className='text-lg justify-center flex flex-wrap w-[25rem] gap-y-4 gap-x-6 '>
+                                    <div className='capitalize flex cursor-pointer justify-center items-center text-center flex-col w-[7rem] hover:text-white transition-all duration-700 h-[5rem] bg-neutral-50 group rounded-xl relative overflow-hidden'>
+                                        <div className='h-full group-hover:w-full transition-all duration-1000 w-[9px] absolute left-0 bg-red-500'></div>
+                                        <div className='z-10'>angry😡</div> 
+                                        <div className='z-10'>{Math.floor(emotion.sentiments.angry*1000)/10}%</div>
+                                        </div>
+                                    <div className='capitalize flex cursor-pointer justify-center items-center text-center flex-col w-[7rem] hover:text-white transition-all duration-700 h-[5rem] bg-neutral-50 group rounded-xl relative overflow-hidden'>
+                                        <div className='h-full group-hover:w-full transition-all duration-1000 w-[9px] absolute left-0 bg-green-500'></div>
+                                        <div className='z-10'>disgust🤢</div> 
+                                        <div className='z-10'>{Math.floor(emotion.sentiments.disgust*1000)/10}%</div>
+                                        </div>
+                                    <div className='capitalize flex cursor-pointer justify-center items-center text-center flex-col w-[7rem] hover:text-white transition-all duration-700 h-[5rem] bg-neutral-50 group rounded-xl relative overflow-hidden'>
+                                        <div className='h-full group-hover:w-full transition-all duration-1000 w-[9px] absolute left-0 bg-gray-600'></div>
+                                        <div className='z-10'>fear😨</div> 
+                                        <div className='z-10'>{Math.floor(emotion.sentiments.fear*1000)/10}%</div>
+                                        </div>
+                                    <div className='capitalize flex cursor-pointer justify-center items-center text-center flex-col w-[7rem] hover:text-white transition-all duration-700 h-[5rem] bg-neutral-50 group rounded-xl relative overflow-hidden'>
+                                        <div className='h-full group-hover:w-full transition-all duration-1000 w-[9px] absolute left-0 bg-yellow-500'></div>
+                                            <div className='z-10'>happy😁</div> 
+                                            <div className='z-10'>{Math.floor(emotion.sentiments.happy*1000)/10}%</div>
+                                        </div>
+                                    <div className='capitalize flex cursor-pointer justify-center items-center text-center flex-col w-[7rem] hover:text-white transition-all duration-700 h-[5rem] bg-neutral-50 group rounded-xl relative overflow-hidden'>
+                                        <div className='h-full group-hover:w-full transition-all duration-1000 w-[9px] absolute left-0 bg-black'></div>
+                                            <div className='z-10'>neutral😐</div> 
+                                            <div className='z-10'>{Math.floor(emotion.sentiments.neutral*1000)/10}%</div>
+                                        </div>
+                                    <div className='capitalize flex cursor-pointer justify-center items-center text-center flex-col w-[7rem] hover:text-white transition-all duration-700 h-[5rem] bg-neutral-50 group rounded-xl relative overflow-hidden'>
+                                        <div className='h-full group-hover:w-full transition-all duration-1000 w-[9px] absolute left-0 bg-sky-400'></div>
+                                            <div className='z-10'>sad😟</div> 
+                                            <div className='z-10'>{Math.floor(emotion.sentiments.sad*1000)/10}%</div>
+                                        </div>
+                                    <div className='capitalize flex cursor-pointer justify-center items-center text-center flex-col w-[7rem] hover:text-white transition-all duration-700 h-[5rem] bg-neutral-50 group rounded-xl relative overflow-hidden'>
+                                        <div className='h-full group-hover:w-full transition-all duration-1000 w-[9px] absolute left-0 bg-fuchsia-500'></div>
+                                            <div className='z-10'>surprise😯</div> 
+                                            <div className='z-10'>{Math.floor(emotion.sentiments.surprise*1000)/10}%</div>
+                                        </div>
                                 </div>
                                 <div className='w-full flex justify-center space-x-5 text-white'>    
                                     <motion.div whileHover={{scale:1.05}} whileTap={{scale:0.98}} className='w-[5rem] py-2 flex justify-center rounded-md bg-neutral-700 cursor-pointer' onClick={() => setShowResult(false)}>Retry</motion.div>
