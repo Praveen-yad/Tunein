@@ -12,7 +12,8 @@ function Landing() {
 
     
   return (
-    <div className="h-[100vh] w-full bg-[#0d0d0d] flex flex-col justify-between">
+    <div className="h-[100vh] w-full bg-[#0d0d0d] hidden lg:flex flex-col justify-between">
+      <div className="text-5xl flex lg:hidden"> Not yet Respinsive for smaller devices</div>
       <div className="h-[80px] w-full z-10 flex justify-between items-center">
         <div className=" ml-[23px] text-white text-lg select-none">tune.in</div>
         <div className="flex items-center mr-[10rem] space-x-4 ">

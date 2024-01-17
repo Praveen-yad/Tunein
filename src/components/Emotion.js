@@ -21,6 +21,8 @@ const Emotion = ({setEmotionPage ,SearchHandler}) => {
                 headers: {
                     'content-type': 'application/json',
                     'X-RapidAPI-Key': 'a58726e477mshcce2e61b0cf2d3dp19f4c6jsn25da94923c41',
+                    // 'X-RapidAPI-Key': '07fe85ef41msha707d181c6dfa9ep1e32a3jsne0216f14b61e',
+                    // 'X-RapidAPI-Key': '3f794735eamsh8773e9693dca730p143f5fjsn6ddbb670fd71',
                     'X-RapidAPI-Host': 'emotion-detection2.p.rapidapi.com'
                 },
                 data: {
