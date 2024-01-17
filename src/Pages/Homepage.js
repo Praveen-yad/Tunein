@@ -27,9 +27,9 @@ const Homepage = ()=>{
       url: 'https://youtube-music-api3.p.rapidapi.com/recommend',
       params: {gl: 'IN'},
       headers: {
-        'X-RapidAPI-Key': '6c9dd360bcmshbd2960c67693380p1b6720jsnf2ca77d7e3e0',
+        // 'X-RapidAPI-Key': '6c9dd360bcmshbd2960c67693380p1b6720jsnf2ca77d7e3e0',
         // 'X-RapidAPI-Key': '07fe85ef41msha707d181c6dfa9ep1e32a3jsne0216f14b61e',
-        // 'X-RapidAPI-Key': '3f794735eamsh8773e9693dca730p143f5fjsn6ddbb670fd71',
+        'X-RapidAPI-Key': '3f794735eamsh8773e9693dca730p143f5fjsn6ddbb670fd71',
         'X-RapidAPI-Host': 'youtube-music-api3.p.rapidapi.com'
       }
     };
@@ -57,9 +57,9 @@ const Homepage = ()=>{
               type: 'song'
             },
             headers: {
-              'X-RapidAPI-Key': '6c9dd360bcmshbd2960c67693380p1b6720jsnf2ca77d7e3e0',
+            //   'X-RapidAPI-Key': '6c9dd360bcmshbd2960c67693380p1b6720jsnf2ca77d7e3e0',
             //   'X-RapidAPI-Key': '07fe85ef41msha707d181c6dfa9ep1e32a3jsne0216f14b61e',
-            //   'X-RapidAPI-Key': '3f794735eamsh8773e9693dca730p143f5fjsn6ddbb670fd71',
+              'X-RapidAPI-Key': '3f794735eamsh8773e9693dca730p143f5fjsn6ddbb670fd71',
               'X-RapidAPI-Host': 'youtube-music-api3.p.rapidapi.com'
             }
           };
@@ -82,9 +82,9 @@ const Homepage = ()=>{
             url: 'https://youtube-music-api3.p.rapidapi.com/search_suggestions',
             params: {q: e.target.value},
             headers: {
-              'X-RapidAPI-Key': '6c9dd360bcmshbd2960c67693380p1b6720jsnf2ca77d7e3e0',
+            //   'X-RapidAPI-Key': '6c9dd360bcmshbd2960c67693380p1b6720jsnf2ca77d7e3e0',
             //   'X-RapidAPI-Key': '07fe85ef41msha707d181c6dfa9ep1e32a3jsne0216f14b61e',
-            //   'X-RapidAPI-Key': '3f794735eamsh8773e9693dca730p143f5fjsn6ddbb670fd71',
+              'X-RapidAPI-Key': '3f794735eamsh8773e9693dca730p143f5fjsn6ddbb670fd71',
               'X-RapidAPI-Host': 'youtube-music-api3.p.rapidapi.com'
             }
           };
@@ -112,9 +112,9 @@ const Homepage = ()=>{
             url: 'https://youtube-music-api3.p.rapidapi.com/next',
             params: {id: player.videoId},
             headers: {
-              'X-RapidAPI-Key': '6c9dd360bcmshbd2960c67693380p1b6720jsnf2ca77d7e3e0',
+            //   'X-RapidAPI-Key': '6c9dd360bcmshbd2960c67693380p1b6720jsnf2ca77d7e3e0',
             //   'X-RapidAPI-Key': '07fe85ef41msha707d181c6dfa9ep1e32a3jsne0216f14b61e',
-            //   'X-RapidAPI-Key': '3f794735eamsh8773e9693dca730p143f5fjsn6ddbb670fd71',
+              'X-RapidAPI-Key': '3f794735eamsh8773e9693dca730p143f5fjsn6ddbb670fd71',
             'X-RapidAPI-Host': 'youtube-music-api3.p.rapidapi.com'
         }
     };

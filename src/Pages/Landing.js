@@ -12,8 +12,9 @@ function Landing() {
 
     
   return (
+    <div>
+    <div className="text-2xl flex lg:hidden">Not Responsive for Smaller Devices</div>
     <div className="h-[100vh] w-full bg-[#0d0d0d] hidden lg:flex flex-col justify-between">
-      <div className="text-5xl flex lg:hidden"> Not yet Respinsive for smaller devices</div>
       <div className="h-[80px] w-full z-10 flex justify-between items-center">
         <div className=" ml-[23px] text-white text-lg select-none">tune.in</div>
         <div className="flex items-center mr-[10rem] space-x-4 ">
@@ -27,9 +28,9 @@ function Landing() {
             <div className="bg-neutral-400 rounded-r-lg h-[4px] w-[100px] text-#ffffff-700 select-none"></div>
             <div
               className="text-white flex items-center
-             space-x-3
-            text-sm opacity-70 "
-            >
+              space-x-3
+              text-sm opacity-70 "
+              >
               <div className="ml-[12px] ">
                 <IoPlaySkipBack />
               </div>
@@ -85,9 +86,10 @@ function Landing() {
           <img alt="ERROR"
             className="object-cover w-[40rem] grayscale"
             src="https://res.cloudinary.com/de2rges3m/image/upload/v1703367867/tunein/pexels-nardo-3574678-PhotoRoom.png-PhotoRoom_f8zfn4.png"
-          />
+            />
         </div>
       </div>
+    </div>
     </div>
   );
 }
